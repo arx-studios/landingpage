@@ -3,6 +3,7 @@
 # Claude / AI instruction files
 CLAUDE.md
 AGENTS.md
+.claude
 
 # dependencies
 /node_modules
