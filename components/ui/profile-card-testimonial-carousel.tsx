@@ -30,9 +30,10 @@ const team: TeamMember[] = [
     description:
       "Passionate about building the future of digital experiences. Previously led development at DRDO & TCrest. Now creating something new at the intersection of art and technology.",
     imageUrl: "/dinosaur.jpeg",
-    githubUrl: "#",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    githubUrl: "https://github.com/cyborgwastaken",
+    twitterUrl: "https://x.com/cyborgwastaken",
+    youtubeUrl: "https://youtube.com/@cyborgwastaken",
+    linkedinUrl: "https://linkedin.com/in/ayuxcyb",
   },
 ]
 
