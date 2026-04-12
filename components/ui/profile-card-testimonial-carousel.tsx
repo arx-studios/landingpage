@@ -26,22 +26,10 @@ interface TeamMember {
 const team: TeamMember[] = [
   {
     name: "Ayushman Das",
-    title: "Founder & CEO, ARX Studios",
+    title: "Founder , ARX Studios",
     description:
       "Passionate about building the future of digital experiences. Previously led development at DRDO & TCrest. Now creating something new at the intersection of art and technology.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80",
-    githubUrl: "#",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Co-Founder",
-    title: "Co-Founder & CTO, ARX Studios",
-    description:
-      "Placeholder bio. Passionate about technology and building scalable systems. Bringing deep technical expertise to help shape ARX Studios from the ground up.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80",
+    imageUrl: "/dinosaur.jpeg",
     githubUrl: "#",
     twitterUrl: "#",
     linkedinUrl: "#",
@@ -206,7 +194,7 @@ export function TeamCarousel({ className }: TeamCarouselProps) {
       </div>
 
       {/* ── Navigation ──────────────────────────────── */}
-      <div className="flex justify-center items-center gap-6 mt-8">
+      {team.length > 1 && <div className="flex justify-center items-center gap-6 mt-8">
         <button
           onClick={handlePrevious}
           aria-label="Previous"
@@ -236,7 +224,7 @@ export function TeamCarousel({ className }: TeamCarouselProps) {
         >
           <ChevronRight className="w-5 h-5" />
         </button>
-      </div>
+      </div>}
 
     </div>
   )

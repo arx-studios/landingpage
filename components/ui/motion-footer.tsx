@@ -87,6 +87,7 @@ const STYLES = `
 type MagneticProps = React.HTMLAttributes<HTMLElement> & {
   as?: React.ElementType
   href?: string
+  scroll?: boolean
   target?: string
   rel?: string
 }
@@ -230,7 +231,8 @@ export function CinematicFooter() {
             {/* Primary CTA */}
             <MagneticButton
               as={Link}
-              href="/signin"
+              href="/?modal=signin"
+              scroll={false}
               className="arx-glass-pill px-10 py-5 rounded-full text-white font-bold text-sm md:text-base"
             >
               Get Early Access
@@ -240,14 +242,16 @@ export function CinematicFooter() {
             <div className="flex flex-wrap justify-center gap-3 mt-1">
               <MagneticButton
                 as={Link}
-                href="/privacy"
+                href="/?modal=privacy"
+                scroll={false}
                 className="arx-glass-pill px-6 py-3 rounded-full text-white/45 font-medium text-xs md:text-sm hover:text-white/75 transition-colors"
               >
                 Privacy Policy
               </MagneticButton>
               <MagneticButton
                 as={Link}
-                href="/signin"
+                href="/?modal=signin"
+                scroll={false}
                 className="arx-glass-pill px-6 py-3 rounded-full text-white/45 font-medium text-xs md:text-sm hover:text-white/75 transition-colors"
               >
                 Sign In

@@ -44,7 +44,8 @@ export default function Page() {
           {/* <div className="flex flex-col items-center gap-4">
             <p className="text-white/35 text-base">Be the first to know when we launch</p>
             <Link
-              href="/signin"
+              href="/?modal=signin"
+              scroll={false}
               className="flex items-center gap-3 px-9 py-4 rounded-full bg-white/[0.07] border border-white/[0.15] text-white text-base font-medium backdrop-blur-sm hover:bg-white/[0.12] hover:border-white/[0.25] transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,255,255,0.06)] active:scale-[0.98]"
             >
               Get Early Access
