@@ -193,7 +193,7 @@ export function CinematicFooter() {
 
       <section
         ref={sectionRef}
-        className="relative w-full h-screen flex flex-col justify-between overflow-hidden bg-black/50 backdrop-blur-xl text-white"
+        className="relative w-full h-screen flex flex-col justify-between overflow-hidden bg-gradient-to-b from-transparent via-black/40 to-black/80 backdrop-blur-xl text-white"
       >
         {/* Aurora glow */}
         <div className="arx-footer-aurora arx-footer-breathe absolute left-1/2 top-1/2 h-[60vh] w-[80vw] rounded-[50%] blur-[90px] pointer-events-none z-0" />
