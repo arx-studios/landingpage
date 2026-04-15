@@ -65,7 +65,10 @@ const STYLES = `
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 24px rgba(255,255,255,0.1));
+  filter:
+    drop-shadow(0 0 20px rgba(255,255,255,0.55))
+    drop-shadow(0 0 60px rgba(255,255,255,0.25))
+    drop-shadow(0 0 120px rgba(255,255,255,0.1));
 }
 
 .arx-glass-pill {
@@ -219,10 +222,10 @@ export function CinematicFooter() {
 
 
         {/* ── Centre content ── */}
-        <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 mt-16 w-full max-w-5xl mx-auto">
+        <div className="relative z-20 flex flex-1 flex-col items-center justify-center px-6 mt-16 w-full max-w-5xl mx-auto">
           <h2
             ref={headingRef}
-            className="arx-footer-heading-glow text-5xl md:text-8xl font-black tracking-tighter mb-12 text-center"
+            className="arx-footer-heading-glow text-5xl md:text-8xl font-black tracking-tighter mb-12 text-center pb-4"
           >
             Something&apos;s coming.
           </h2>
